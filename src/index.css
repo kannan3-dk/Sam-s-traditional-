@@ -1,0 +1,310 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Quicksand', 'Mukta Malar', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-body: 'Montserrat', 'Mukta Malar', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #f4faff;
+    color: #111d23;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: var(--font-heading);
+  }
+}
+
+/* Claymorphic Triple-Layer Depth Utilities */
+
+/* Clay Surface - Soft White / Sky Tint */
+.clay-surface {
+  background: #ffffff;
+  box-shadow: 
+    14px 18px 36px rgba(17, 29, 35, 0.07),
+    4px 6px 14px rgba(17, 29, 35, 0.04),
+    inset 3px 3px 6px rgba(255, 255, 255, 0.95),
+    inset -3px -3px 7px rgba(17, 29, 35, 0.05);
+}
+
+.clay-surface-subtle {
+  background: #e9f6fd;
+  box-shadow: 
+    10px 14px 28px rgba(17, 29, 35, 0.05),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.9),
+    inset -3px -3px 6px rgba(17, 29, 35, 0.06);
+}
+
+/* Product Pastel Cards with molded clay depths */
+.clay-card-lavender {
+  background: #f2eafd;
+  box-shadow: 
+    12px 18px 32px rgba(142, 114, 187, 0.12),
+    4px 6px 12px rgba(17, 29, 35, 0.03),
+    inset 3px 3px 6px rgba(255, 255, 255, 0.95),
+    inset -4px -4px 8px rgba(142, 114, 187, 0.14);
+}
+
+.clay-card-peach {
+  background: #ffede7;
+  box-shadow: 
+    12px 18px 32px rgba(255, 112, 67, 0.12),
+    4px 6px 12px rgba(17, 29, 35, 0.03),
+    inset 3px 3px 6px rgba(255, 255, 255, 0.95),
+    inset -4px -4px 8px rgba(230, 90, 48, 0.12);
+}
+
+.clay-card-mint {
+  background: #e5f7ee;
+  box-shadow: 
+    12px 18px 32px rgba(46, 160, 108, 0.12),
+    4px 6px 12px rgba(17, 29, 35, 0.03),
+    inset 3px 3px 6px rgba(255, 255, 255, 0.95),
+    inset -4px -4px 8px rgba(46, 160, 108, 0.12);
+}
+
+.clay-card-blue {
+  background: #e3f1fb;
+  box-shadow: 
+    12px 18px 32px rgba(59, 130, 246, 0.12),
+    4px 6px 12px rgba(17, 29, 35, 0.03),
+    inset 3px 3px 6px rgba(255, 255, 255, 0.95),
+    inset -4px -4px 8px rgba(59, 130, 246, 0.12);
+}
+
+.clay-card-yellow {
+  background: #fef8e2;
+  box-shadow: 
+    12px 18px 32px rgba(254, 195, 48, 0.15),
+    4px 6px 12px rgba(17, 29, 35, 0.03),
+    inset 3px 3px 6px rgba(255, 255, 255, 0.95),
+    inset -4px -4px 8px rgba(210, 150, 20, 0.12);
+}
+
+/* Clay Interactive Buttons */
+.clay-btn-coral {
+  background: #ff7043;
+  color: #ffffff;
+  box-shadow: 
+    0 12px 24px -4px rgba(255, 112, 67, 0.38),
+    0 4px 8px rgba(172, 53, 9, 0.15),
+    inset 3px 3px 6px rgba(255, 255, 255, 0.45),
+    inset -3px -3px 6px rgba(172, 53, 9, 0.35);
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.clay-btn-coral:hover {
+  box-shadow: 
+    0 16px 28px -4px rgba(255, 112, 67, 0.48),
+    0 6px 12px rgba(172, 53, 9, 0.2),
+    inset 3px 3px 7px rgba(255, 255, 255, 0.55),
+    inset -3px -3px 7px rgba(172, 53, 9, 0.4);
+  transform: translateY(-2px) scale(1.01);
+}
+
+.clay-btn-coral:active {
+  box-shadow: 
+    0 2px 6px rgba(255, 112, 67, 0.2),
+    inset 4px 4px 8px rgba(100, 24, 0, 0.4),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.2);
+  transform: translateY(1px) scale(0.98);
+}
+
+.clay-btn-mustard {
+  background: #fec330;
+  color: #523c00;
+  box-shadow: 
+    0 10px 20px -3px rgba(254, 195, 48, 0.38),
+    inset 3px 3px 5px rgba(255, 255, 255, 0.6),
+    inset -3px -3px 5px rgba(150, 105, 0, 0.3);
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.clay-btn-mustard:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 
+    0 14px 26px -3px rgba(254, 195, 48, 0.45),
+    inset 3px 3px 6px rgba(255, 255, 255, 0.7),
+    inset -3px -3px 6px rgba(150, 105, 0, 0.35);
+}
+
+.clay-btn-mustard:active {
+  box-shadow: 
+    0 2px 4px rgba(254, 195, 48, 0.2),
+    inset 4px 4px 8px rgba(111, 81, 0, 0.4),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.3);
+  transform: translateY(1px) scale(0.98);
+}
+
+.clay-btn-berry {
+  background: #ff6894;
+  color: #ffffff;
+  box-shadow: 
+    0 10px 20px -3px rgba(255, 104, 148, 0.4),
+    inset 3px 3px 5px rgba(255, 255, 255, 0.5),
+    inset -3px -3px 5px rgba(184, 15, 85, 0.35);
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.clay-btn-berry:hover {
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 
+    0 14px 26px -3px rgba(255, 104, 148, 0.48),
+    inset 3px 3px 6px rgba(255, 255, 255, 0.6),
+    inset -3px -3px 6px rgba(184, 15, 85, 0.4);
+}
+
+.clay-btn-berry:active {
+  box-shadow: 
+    0 2px 4px rgba(255, 104, 148, 0.2),
+    inset 4px 4px 8px rgba(108, 0, 46, 0.4),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.25);
+  transform: translateY(1px) scale(0.98);
+}
+
+.clay-btn-neutral {
+  background: #ffffff;
+  color: #111d23;
+  box-shadow: 
+    0 8px 16px rgba(17, 29, 35, 0.06),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.9),
+    inset -2px -2px 5px rgba(17, 29, 35, 0.07);
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.clay-btn-neutral:hover {
+  transform: translateY(-2px);
+  box-shadow: 
+    0 12px 22px rgba(17, 29, 35, 0.09),
+    inset 2px 2px 5px rgba(255, 255, 255, 1),
+    inset -2px -2px 6px rgba(17, 29, 35, 0.09);
+}
+
+.clay-btn-neutral:active {
+  box-shadow: 
+    0 2px 4px rgba(17, 29, 35, 0.04),
+    inset 3px 3px 6px rgba(17, 29, 35, 0.09),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.6);
+  transform: translateY(1px);
+}
+
+/* Clay Inputs (Soft Indentations in UI Clay) */
+.clay-input {
+  background: #edf7fd;
+  box-shadow: 
+    inset 3px 3px 6px rgba(17, 29, 35, 0.08),
+    inset -2px -2px 5px rgba(255, 255, 255, 0.95),
+    0 1px 2px rgba(17, 29, 35, 0.02);
+  border: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.clay-input:focus {
+  outline: none;
+  border-color: #fec330;
+  background: #ffffff;
+  box-shadow: 
+    inset 2px 2px 4px rgba(17, 29, 35, 0.04),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.9),
+    0 0 0 4px rgba(254, 195, 48, 0.22);
+}
+
+/* Floating Navigation Bar */
+.clay-floating-nav {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 
+    0 18px 36px rgba(17, 29, 35, 0.08),
+    0 6px 12px rgba(17, 29, 35, 0.04),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.9),
+    inset -2px -2px 5px rgba(17, 29, 35, 0.04);
+}
+
+/* Clay Accordions */
+.clay-accordion-item {
+  background: #ffffff;
+  box-shadow: 
+    8px 12px 24px rgba(17, 29, 35, 0.05),
+    inset 2px 2px 4px rgba(255, 255, 255, 0.9),
+    inset -2px -2px 5px rgba(17, 29, 35, 0.04);
+  transition: all 0.25s ease;
+}
+
+.clay-accordion-item[data-open="true"] {
+  background: #fdfaf5;
+  box-shadow: 
+    10px 16px 30px rgba(255, 112, 67, 0.08),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.95),
+    inset -3px -3px 6px rgba(255, 112, 67, 0.08);
+}
+
+/* Clay Badges and Chips */
+.clay-chip-berry {
+  background: #ff6894;
+  color: #ffffff;
+  box-shadow: 
+    0 4px 8px rgba(255, 104, 148, 0.3),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.6),
+    inset -1px -1px 2px rgba(184, 15, 85, 0.3);
+}
+
+.clay-chip-mustard {
+  background: #fec330;
+  color: #5c4300;
+  box-shadow: 
+    0 4px 8px rgba(254, 195, 48, 0.3),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.7),
+    inset -1px -1px 2px rgba(111, 81, 0, 0.25);
+}
+
+.clay-chip-coral {
+  background: #ff7043;
+  color: #ffffff;
+  box-shadow: 
+    0 4px 8px rgba(255, 112, 67, 0.3),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.6),
+    inset -1px -1px 2px rgba(172, 53, 9, 0.3);
+}
+
+.clay-chip-mint {
+  background: #2ea06c;
+  color: #ffffff;
+  box-shadow: 
+    0 4px 8px rgba(46, 160, 108, 0.3),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.6),
+    inset -1px -1px 2px rgba(15, 90, 50, 0.3);
+}
+
+.clay-chip-neutral {
+  background: #eef6fc;
+  color: #111d23;
+  box-shadow: 
+    0 3px 6px rgba(17, 29, 35, 0.05),
+    inset 1px 1px 2px rgba(255, 255, 255, 0.9),
+    inset -1px -1px 2px rgba(17, 29, 35, 0.06);
+}
+
+/* Floating dish visual glow & shadow */
+.floating-dish-shadow {
+  filter: drop-shadow(0 18px 24px rgba(17, 29, 35, 0.16));
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f4faff;
+}
+::-webkit-scrollbar-thumb {
+  background: #cfdce4;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff7043;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "SAM's Traditional Food - Tamil Old Traditional Cuisine",
+  "description": "Authentic Tamil ancient claypot dining, wood-fired Seeraga Samba biryani, handcrafted banana leaf thali feasts, and live table reservations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
